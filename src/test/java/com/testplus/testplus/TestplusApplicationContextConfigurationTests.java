@@ -8,7 +8,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {TextService.class})
+@ContextConfiguration(classes = {TextService.class})//essa configuração diferente da anotação @SpringBootTeste
+	//inicia um contexto reduzido e inicia apenas as classes da aplicação que foram passadas como parâmetros
 class TestplusApplicationContextConfigurationTests {
 
 
